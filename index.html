@@ -250,7 +250,7 @@
 			<div class="row">
 				<div class="col-md-8 offset-md-2">
 					<div class="contact-form">
-						<form id="contactForm" method="POST" action="/js/contact">
+						<form id="contactForm" onsubmit="sendMail(event)">
 							<div class="row">
 								<div class="form-group col-md-6 col-sm-6">
 									<input type="text" class="form-control" placeholder="Your Name">
@@ -329,5 +329,7 @@
 	<script src="js/SmoothScroll.js"></script>
 	<script src="js/animation-headline.js"></script>
 	<script src="js/function.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+	<script src="contact.js"></script>
 </body>
 </html>
