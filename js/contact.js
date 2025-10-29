@@ -1,7 +1,9 @@
+// Inisialisasi EmailJS //
 (function() {
-  emailjs.init("GGjnh6b9NIXEn1F7X"); 
+  emailjs.init("GGjnh6b9NIXEn1F7X");
 })();
 
+// Fungsi kirim email //
 function sendMail(e) {
   e.preventDefault();
 
@@ -18,6 +20,7 @@ function sendMail(e) {
       document.getElementById("contactForm").reset();
     })
     .catch((error) => {
+      console.error("EmailJS Error:", error);
       alert("Gagal mengirim pesan: " + error.text);
     });
 }

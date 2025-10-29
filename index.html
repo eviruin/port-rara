@@ -42,12 +42,12 @@
 					<!-- <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li> -->
 					<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
 					<div class="lang-toggle" id="lang-toggle">
-						<span class="lang-label active" data-lang="en"> 🇬🇧 EN</span>
+						<span class="lang-label active" data-lang="en"> EN</span>
 						<div class="toggle-switch">
 							<input type="checkbox" id="lang-switch">
 							<label for="lang-switch"></label>
 						</div>
-						<span class="lang-label" data-lang="id"> 🇮🇩 ID</span>
+						<span class="lang-label" data-lang="id"> ID</span>
 					</div>
 				</ul>
 				<div class="navbar-toggle"></div>
@@ -125,45 +125,45 @@
 									<div class="experience-single">
 										<h5>Mei 2025 - Okt 2025</h5>
 										<h4>Crew Outlet | Warung Taburai</h4>
-										<p>- Memberikan pelayanan ramah dan efisien kepada pelanggan.</p>
-										<p>- Menyajikan dan melakukan plating pesanan sesuai SOP.</p>
-										<p>- Memastikan ketersediaan menu dan menjaga kebersihan outlet.</p>
+										<p data-translate="exp1">- Memberikan pelayanan ramah dan efisien kepada pelanggan.<br>
+										- Menyajikan dan melakukan plating pesanan sesuai SOP.<br>
+										- Memastikan ketersediaan menu dan menjaga kebersihan outlet.</p>
 									</div>
 								</div>
 								<div class="swiper-slide">
 									<div class="experience-single">
 										<h5>Jun 2022 - Okt 2022</h5>
-										<h4>Staff Produksi | PT Venus Prima Sentosa</h4>
-										<p>- Menjaga kebersihan area kerja dan peralatan produksi.</p>
-										<p>- Menyiapkan bahan dan mengoperasikan peralatan produksi.</p>
-										<p>- Membuat roti, menghias, dan menambahkan topping sesuai prosedur.</p>
+										<h4 data-translate="job2">Staff Produksi | PT Venus Prima Sentosa</h4>
+										<p data-translate="exp2">- Menjaga kebersihan area kerja dan peralatan produksi.<br>
+										- Menyiapkan bahan dan mengoperasikan peralatan produksi.<br>
+										- Membuat roti, menghias, dan menambahkan topping sesuai prosedur.</p>
 									</div>
 								</div>
 								<div class="swiper-slide">
 									<div class="experience-single">
 										<h5>Jun 2021 - Agu 2021</h5>
 										<h4>SPG Paseo | PT Hasta Ayu Nusantara</h4>
-										<p>- Menawarkan, mempromosikan, dan menjelaskan produk kepada pelanggan.</p>
-										<p>- Menjaga kebersihan rak dan area penjualan.</p>
-										<p>- Meningkatkan penjualan melalui komunikasi persuasif.</p>
+										<p data-translate="exp3">- Menawarkan, mempromosikan, dan menjelaskan produk kepada pelanggan.<br>
+										- Menjaga kebersihan rak dan area penjualan.<br>
+										- Meningkatkan penjualan melalui komunikasi persuasif.</p>
 									</div>
 								</div>
 								<div class="swiper-slide">
 									<div class="experience-single">
 										<h5>Sep 2017 - Mei 2019</h5>
-										<h4>Pramuniaga | Grand Swalayan</h4>
-										<p>- Melayani pelanggan dan membantu menemukan produk yang dicari.</p>
-										<p>- Menata dan mendisplay produk agar terlihat rapi dan menarik.</p>
-										<p>- Mengecek stok barang secara berkala.</p>
+										<h4 data-translate="job1">Pramuniaga | Grand Swalayan</h4>
+										<p data-translate="exp4">- Melayani pelanggan dan membantu menemukan produk yang dicari.<br>
+										- Menata dan mendisplay produk agar terlihat rapi dan menarik.<br>
+										- Mengecek stok barang secara berkala.</p>
 									</div>
 								</div>
 								<div class="swiper-slide">
 									<div class="experience-single">
 										<h5>Okt 2015 - Nov 2015</h5>
-										<h4>Housekeeping Binus Apartement| PT CIPTA ANEKA SELERA (CAS)</h4>
-										<p>- Mempersiapkan seluruh fasilitas ruang apartement yang akan ditempati</p>
-										<p>- Melayani kebutuhan pengunjung</p>
-										<p>- Mencatat barang yang hilang atau rusak untuk proses penggantian komponen baru di setiap kamar.</p>
+										<h4>Housekeeping Binus Apartement | PT CIPTA ANEKA SELERA (CAS)</h4>
+										<p data-translate="exp5">- Mempersiapkan seluruh fasilitas ruang apartement yang akan ditempati<br>
+										- Melayani kebutuhan pengunjung<br>
+										- Mencatat barang yang hilang atau rusak untuk proses penggantian komponen baru di setiap kamar.</p>
 									</div>
 								</div>
 							</div>
@@ -180,7 +180,7 @@
 									<div class="experience-single">
 										<h5>2012 - 2015</h5>
 										<h4>SMK bhakti INSANI</h4>
-										<p>Jurusan Rekayasa Perangkat Lunak</p>
+										<p data-translate="educ_jurusan">Jurusan Rekayasa Perangkat Lunak</p>
 									</div>
 								</div>								
 								<div class="swiper-slide">
@@ -261,16 +261,16 @@
 						<form id="contactForm" onsubmit="sendMail(event)">
 							<div class="row">
 								<div class="form-group col-md-6 col-sm-6">
-									<input type="text" class="form-control" placeholder="Your Name">
+									<input type="text" name="name" class="form-control" placeholder="Your Name">
 								</div>								
 								<div class="form-group col-md-6 col-sm-6">
-									<input type="email" class="form-control" placeholder="Your Email Address">
+									<input type="email" name="email" class="form-control" placeholder="Your Email Address">
 								</div>
 								<div class="form-group col-md-12 col-sm-12">
-									<input type="text" class="form-control" placeholder="Subject">
+									<input type="text" name="subject" class="form-control" placeholder="Subject">
 								</div>
 								<div class="form-group col-md-12 col-sm-12">
-									<textarea rows="4" class="form-control" placeholder="How can i help you?"></textarea>
+									<textarea rows="4" name="message" class="form-control" placeholder="How can i help you?"></textarea>
 								</div>
 								<div class="col-md-12 col-sm-12 text-center">
 									<button type="submit" class="btn-contact" data-translate="contact_button">Contact Now</button>
@@ -293,7 +293,7 @@
 				</div>				
 				<div class="col-lg-4">
 					<div class="contact-info-single wow fadeInUp" data-wow-delay="0.6s">
-						<h3>No. Telepon</h3>
+						<h3>Phone</h3>
 						<p>+62 896 0337 2113</p>
 					</div>
 				</div>				
