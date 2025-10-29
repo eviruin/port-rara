@@ -42,6 +42,8 @@ const translations = {
     exp5: `- Mempersiapkan seluruh fasilitas ruang apartement yang akan ditempati.
 				- Melayani kebutuhan pengunjung.
 				- Mencatat barang yang hilang atau rusak untuk proses penggantian komponen baru di setiap kamar.`,
+    contact_info_address: "Alamat",
+    contact_info_phone: "Telepon",
   },
   en: {
     home: "Home",
@@ -85,6 +87,8 @@ const translations = {
     exp5: `- Prepare all apartment room facilities before occupancy.
                 - Serve guests needs.
                 - Record any lost or damaged items for the replacement process of new components in each room.`,
+    contact_info_address: "Address",
+    contact_info_phone: "Phone",
   }
 };
 
