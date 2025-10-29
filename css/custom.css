@@ -4,9 +4,9 @@
 	Author Url 		: https://awaikenthemes.com
 */
 
-/************************************/
-/***** 	    General css		     ****/
-/************************************/
+ 
+ /** 	    General css		      **/
+ 
 
 body{
 	font-size: 16px;
@@ -158,9 +158,9 @@ a:focus{
 	background: none;
 }
 
-/************************************/
-/*****    Navigation area css   *****/
-/************************************/
+ 
+ /**    Navigation area css   * **/
+ 
 
 header.header{
 	
@@ -279,9 +279,68 @@ header .navbar.sticky-header{
 	color: #ff5d56;
 }
 
-/************************************/
-/*****     Banner Section css    ****/
-/************************************/
+/* toggle switch multy lang */
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.lang-toggle .lang-label {
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.lang-toggle .lang-label.active {
+  font-weight: 600;
+  opacity: 1;
+}
+
+.toggle-switch {
+  position: relative;
+  width: 40px;
+  height: 20px;
+}
+
+.toggle-switch input {
+  display: none;
+}
+
+.toggle-switch label {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ccc;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toggle-switch label::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  width: 16px;
+  height: 16px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.toggle-switch input:checked + label {
+  background-color: #eb4641;
+}
+
+.toggle-switch input:checked + label::after {
+  transform: translateX(20px);
+}
+
+
+ 
+ /**     Banner Section css     **/
 
 .banner{
 	position: relative;
@@ -334,9 +393,9 @@ header .navbar.sticky-header{
 	color: #ff5d56;
 }
 
-/**************************************/
-/*****     About us Section css    ****/
-/**************************************/
+ 
+ /**     About us Section css    ****/
+ 
 
 .about-us{
 	padding: 100px 0;
@@ -453,9 +512,9 @@ header .navbar.sticky-header{
 	left: 0;
 }
 
-/**************************************/
-/*****     Services Section css    ****/
-/**************************************/
+ 
+ /**     Services Section css    ****/
+ 
 
 .services{
 	padding: 100px 0 70px;
@@ -523,9 +582,7 @@ header .navbar.sticky-header{
 	margin-bottom: 0;
 }
 
-/***************************************/
 /*****     My Resume Section css    ****/
-/***************************************/
 
 .my-resume{
 	padding: 100px 0 70px;
@@ -656,9 +713,7 @@ header .navbar.sticky-header{
 	margin: 0;
 }
 
-/***************************************/
 /*****     Portfolio Section css    ****/
-/***************************************/
 
 .portfolio{
 	background: #151515;
@@ -817,9 +872,7 @@ header .navbar.sticky-header{
 	color: #ff5d56;
 }
 
-/***************************************/
 /*****     Our Team Section css     ****/
-/***************************************/
 
 .our-team{
 	padding: 100px 0;
@@ -890,9 +943,7 @@ header .navbar.sticky-header{
 	transform: scale(1);
 }
 
-/***************************************/
 /*****      Pricing Section css     ****/
-/***************************************/
 
 .pricing{
 	padding: 100px 0;
@@ -1023,9 +1074,7 @@ header .navbar.sticky-header{
     transform: rotate(-45deg);
 }
 
-/*******************************************/
 /*****      Testimonial Section css     ****/
-/*******************************************/
 
 .testimonials{
 	padding: 100px 0;
@@ -1118,9 +1167,7 @@ header .navbar.sticky-header{
 	background: #ff5d56;
 }
 
-/*******************************************/
 /*****      Newsletter Section css      ****/
-/*******************************************/
 
 .newsletter{
 	background: #151515;
@@ -1189,9 +1236,7 @@ header .navbar.sticky-header{
 	outline: 0;
 }
 
-/*******************************************/
 /*****      Latest Blog Section css     ****/
-/*******************************************/
 
 .latest-blog{
 	padding: 100px 0;
@@ -1292,9 +1337,9 @@ header .navbar.sticky-header{
 	margin-right: 6px;
 }
 
-/************************************/
-/*****      Brand Slider css     ****/
-/************************************/
+ 
+/*****      Brand Slider css      **/
+ 
 
 .brand-sponser{
 	padding: 60px 0;
@@ -1314,9 +1359,9 @@ header .navbar.sticky-header{
 	opacity: 1;
 }
 
-/************************************/
-/*****       Contact us css      ****/
-/************************************/
+ 
+/*****       Contact us css       **/
+ 
 
 .contactus{
 	padding: 100px 0;
@@ -1352,9 +1397,7 @@ header .navbar.sticky-header{
 	color: #fff;
 }
 
-/*****************************************/
-/*****     Contact Information css    ****/
-/*****************************************/
+/*****     Contact Information css     **/
 
 .contact-information{
 	background: linear-gradient(#111111 50%,#151515 50%);
@@ -1429,9 +1472,7 @@ header .navbar.sticky-header{
 	z-index: 1;
 }
 
-/****************************************/
-/*****       Footer Section css      ****/
-/****************************************/
+/*****       Footer Section css       **/
 
 .main-footer{
 	padding: 100px 0;
@@ -1524,9 +1565,7 @@ header .navbar.sticky-header{
 	color: #ff5d56;
 }
 
-/*********************************/
-/*****     Media Query Css    ****/
-/*********************************/
+/*****     Media Query Css     **/
 
 @media only screen and (max-width: 991px){
 	.header .navbar-nav{
